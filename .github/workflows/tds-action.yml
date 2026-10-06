@@ -1,0 +1,19 @@
+name: TDS GitHub Action
+
+on:
+  push:
+  workflow_dispatch:
+
+jobs:
+  test:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: 26ds1000025@ds.study.iitm.ac.in
+        run: echo "Hello, world!"
+
+      - name: Verify GitHub Actions
+        run: echo "TDS GitHub Actions workflow completed successfully."
